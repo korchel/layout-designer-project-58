@@ -64,6 +64,14 @@ h3 {
   color: var(--dark);
 }
 
+.white {
+  color: var(--white);
+}
+
+.main-color {
+  color: var(--main);
+}
+
 .header-section::before {
   position: absolute;
 
@@ -129,6 +137,11 @@ h3 {
 
   background-color: var(--main);
 }
+/*VIDEO*/
+.video-section {
+  position: relative;
+  z-index: 2;
+}
 
 .video-section-headline {
   margin-bottom: 30px;
@@ -141,5 +154,28 @@ h3 {
 .video {
   display: block;
   margin: 0 auto;
+  margin-bottom: -100px; /*ATTENTION*/
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+}
+/** NAVIGATION **/
+#navigation {
+  position: relative;
+  z-index: 1;
+  margin-top: -100px;
+  background-color: var(--main-dark);
+  padding-top: 200px;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu-headline {
+  font-family: Neucha, serif;
+  font-size: 52px;
+
+}
+
+.menu-item {
+
 }
