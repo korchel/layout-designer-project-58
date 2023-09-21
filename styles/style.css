@@ -17,11 +17,18 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+}
+
+a, a:link, a:visited  {
+  text-decoration: none;
+}
 /*BASIC*/
 
 :root {
   --white: #fff;
-  --translucent-white: #d7ccc0;
+  --translucent-light: #d7ccc0;
   --light: #f5f4f0;
   --main: #fe8a02;
   --main-hover: #EA7600;
@@ -34,10 +41,6 @@
   --line-height: 1.6em;
   --text-color: #2a2626;
   --text-size: 16px;
-}
-
-body {
-  margin: 0;
 }
 
 .container {
@@ -78,14 +81,19 @@ h3 {
 .main-color {
   color: var(--main);
 }
+.bg-light {
+  background-color: var(--light);
+}
+
+.bg-brown {
+  background-color: var(--brown);
+}
 
 .bg::before {
   position: absolute;
 
   width: 100%;
   height: 100%;
-
-  background-color: var(--light);
   
   background-image: url("../images/background-pattern.png");
   background-repeat: no-repeat;
@@ -214,6 +222,7 @@ h3 {
   font-size: 64px;
   margin-bottom: 40px;
   line-height: 1;
+  color: var(--dark);
 }
 
 .margin-top-16 {
@@ -259,7 +268,6 @@ h3 {
   font-size: 24px;
   font-weight: 400;
   line-height: 29px;
-  color: var(--translucent-dark);
 }
 
 .description-text {
@@ -270,4 +278,12 @@ h3 {
   font-weight: 400;
   line-height: 41px;
   color: var(--text-color);
+}
+
+.translucent-light {
+  color: var(--translucent-light);
+}
+
+.translucent-dark {
+  color: var(--translucent-dark);
 }
