@@ -70,6 +70,14 @@ h3 {
   font-size: 34px;
 }
 
+p {
+  color: var(--white);
+  font-size: var(--font-size);
+
+  font-family: OpenSans, serif;
+  line-height: var(--line-height);
+}
+
 .dark {
   color: var(--dark);
 }
@@ -78,11 +86,20 @@ h3 {
   color: var(--white);
 }
 
+.brown {
+  color: var(--brown);
+}
+
 .main-color {
   color: var(--main);
 }
+
 .bg-light {
   background-color: var(--light);
+}
+
+.bg-white {
+  background-color: var(--white);
 }
 
 .bg-brown {
@@ -119,8 +136,6 @@ h3 {
   font-size: var(--text-size);
   line-height: 25.6px;
   font-family: OpenSans, serif;
-
-  color: var(--text-color);
 }
 
 /*HEADER SECTION*/
@@ -249,7 +264,6 @@ h3 {
 
 .description-header-text {
   padding-left: 10px;
-  color: var(--white);
 
   font-weight: 700;
   font-size: 14px;
@@ -259,8 +273,6 @@ h3 {
 
   line-height: 26px;
   text-transform: uppercase;
-
-  background-color: var(--brown);
 }
 
 .secondary-text {
@@ -277,7 +289,6 @@ h3 {
   font-size: 34px;
   font-weight: 400;
   line-height: 41px;
-  color: var(--text-color);
 }
 
 .translucent-light {
@@ -286,4 +297,8 @@ h3 {
 
 .translucent-dark {
   color: var(--translucent-dark);
+}
+
+.text-dark {
+  color: var(--text-color);
 }
