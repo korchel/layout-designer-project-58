@@ -8,7 +8,7 @@
   src: url("../fonts/Neucha-Regular.ttf");
 }
 
-/*RESET*/
+/* RESET */
 
 *, *::before, *::after {
   border: none;
@@ -24,7 +24,7 @@ body {
   line-height: var(--line-height);
 }
 
-/*BASIC*/
+/* COMMON */
 
 :root {
   --white: #fff;
@@ -89,6 +89,10 @@ h3 {
   color: var(--brown);
 }
 
+.text-dark {
+  color: var(--text-color);
+}
+
 .main-color {
   color: var(--main);
 }
@@ -133,9 +137,9 @@ h3 {
   margin-bottom: 0;
 }
 
-/*HEADER SECTION*/
+/* HEADER SECTION */
 
-.header-img { /** ! **/
+.header-img {
   position: absolute;
   top: 55px;
   right: -270px;
@@ -170,7 +174,7 @@ h3 {
   background-color: var(--main-hover);
 }
 
-/*VIDEO-SECTION*/
+/* VIDEO-SECTION */
 
 .video-section {
   position: relative;
@@ -188,11 +192,11 @@ h3 {
 .video {
   display: block;
   margin: 0 auto;
-  margin-bottom: -100px; /*ATTENTION*/
+  margin-bottom: -100px;
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
 
-/** NAVIGATION **/
+/* NAVIGATION */
 
 #navigation {
   position: relative;
@@ -312,11 +316,7 @@ h3 {
   color: var(--translucent-dark);
 }
 
-.text-dark {
-  color: var(--text-color);
-}
-
-/*FOOTER*/
+/* FOOTER */
 .form {
   display: flex;
   background: #42413C;
@@ -386,7 +386,7 @@ h3 {
 
 .agreement-text {
   font-size: 12px;
-  margin: 0px;
+  margin: 0;
   line-height: 1.6;
 }
 
