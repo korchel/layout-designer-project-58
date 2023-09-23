@@ -24,9 +24,6 @@ body {
   line-height: var(--line-height);
 }
 
-a, a:link, a:visited  {
-  text-decoration: none;
-}
 /*BASIC*/
 
 :root {
@@ -45,6 +42,11 @@ a, a:link, a:visited  {
   --headline-height: 1.2em;
   --text-color: #2a2626;
   --text-size: 16px;
+  --link-color: #007DC1;
+}
+
+header, section, footer {
+  position: relative;
 }
 
 .container {
@@ -200,6 +202,10 @@ h3 {
   padding-top: 100px;
 }
 
+.menu > a {
+  text-decoration: none;
+}
+
 .menu {
   display: flex;
   flex-wrap: wrap;
@@ -293,4 +299,82 @@ h3 {
 
 .text-dark {
   color: var(--text-color);
+}
+
+/*FOOTER*/
+.form {
+  display: flex;
+  background: #42413C;
+}
+
+.contact {
+  margin-top: 60px;
+  font-size: 14px;
+  text-align: center;
+  color: black;
+}
+
+.contact a {
+  color: var(--link-color);
+}
+
+.email {
+  margin-top: 38px;
+}
+
+.input-group {
+  display: flex;
+}
+
+.email label {
+  margin-bottom: 9px;
+  font-size: 18px;
+  line-height: 160%;
+}
+
+.email input {
+  height: 50px;
+  width: 423px;
+
+  padding: 15px;
+}
+
+::placeholder {
+  color: #757575;
+
+  font-size: 13.1px;
+
+  line-height: 1.6;
+}
+
+.learn-more {
+  margin: 55px;
+}
+
+.button-2 {
+  position: relative;
+
+  height: 50px;
+  width: 70px;
+  margin-right: 55px;
+  padding: 0;
+  background-color: var(--main);
+}
+
+.button-2::before {
+  content: url("../images/send.png");
+}
+
+.button-2:hover {
+  background-color: var(--main-hover);
+}
+
+.agreement-text {
+  font-size: 12px;
+  margin: 0px;
+  line-height: 1.6;
+}
+
+.agreement-text > a {
+  color: inherit;
 }
