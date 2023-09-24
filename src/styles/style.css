@@ -173,6 +173,7 @@ h3 {
 
 .video-section {
   position: relative;
+  height: 914px;
   z-index: 2;
 }
 
@@ -258,8 +259,6 @@ h3 {
 .menu-item-card:hover .text-dark {
   color: var(--white);
 }
-
-
 
 /* IKEA-EFFECT */
 
