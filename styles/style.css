@@ -44,7 +44,7 @@ body {
   --link-color: #007DC1;
 }
 
-header, section, footer {
+header, section, footer, nav {
   position: relative;
 }
 
@@ -172,7 +172,6 @@ h3 {
 /* VIDEO-SECTION */
 
 .video-section {
-  position: relative;
   z-index: 2;
 }
 
@@ -186,20 +185,22 @@ h3 {
 
 .video {
   display: block;
+  top: 330px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: -100px;
+  margin-bottom: -84px;
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
 
 /* NAVIGATION */
 
 #navigation {
-  position: relative;
-  z-index: 1;
   margin-top: -100px;
-  background-color: var(--main-dark);
   padding-top: 100px;
+
+  z-index: 1;
+
+  background-color: var(--main-dark);
 }
 
 .menu > a {
@@ -260,10 +261,6 @@ h3 {
 }
 
 /* IKEA-EFFECT */
-
-#ikea-effect {
-  position: relative;
-}
 
 .image {
   vertical-align: middle;
