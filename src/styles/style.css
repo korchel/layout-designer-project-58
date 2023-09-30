@@ -225,13 +225,11 @@ h3 {
 .menu-headline {
   font-family: Neucha, serif;
   font-size: 52px;
-
 }
 
 .menu-item {
   width: 350px;
   height: 100%;
-
 }
 
 .menu-item-card {
@@ -246,8 +244,12 @@ h3 {
 .menu-item-text {
   margin-top: 16px;
   margin-bottom: 0;
+  line-height: 25px;
 }
 
+.card-name {
+  line-height: 40px;
+}
 .text-number {
   font-family: Neucha, serif;
   font-size: 64px;
