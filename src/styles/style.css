@@ -194,6 +194,7 @@ h3 {
 .video {
   position: relative;
   margin-top: -100px;
+  margin-bottom: 16px;
   bottom: -100px;
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
