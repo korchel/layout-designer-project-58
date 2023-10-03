@@ -15,16 +15,14 @@
   box-sizing: border-box;
 }
 
+/* COMMON */
+
 body {
   margin: 0;
+
+  font: normal normal 400 var(--font-size)/var(--line-height) OpenSans, serif;
   color: var(--white);
-  font-size: var(--font-size);
-
-  font-family: OpenSans, serif;
-  line-height: var(--line-height);
 }
-
-/* COMMON */
 
 :root {
   --white: #fff;
@@ -33,14 +31,13 @@ body {
   --main: #fe8a02;
   --main-hover: #EA7600;
   --main-dark: #42413c;
-  --dark: #2a2626;
   --translucent-dark: #908d8b;
   --brown: #b09a81;
   --blue: #1085c5;
   --font-size: 16px;
   --line-height: 1.6em;
   --headline-height: 1.2em;
-  --text-color: #2a2626;
+  --text-dark: #2a2626;
   --link-color: #007DC1;
 }
 
@@ -50,6 +47,7 @@ header, section, footer, nav {
 
 .container {
   position: relative;
+
   width: 1110px;
   margin: 0 auto;
   padding-top: 100px;
@@ -57,11 +55,12 @@ header, section, footer, nav {
 }
 
 h1, h2, h3 {
-  font-family: Neucha, serif;
-  line-height: var(--headline-height);
-  font-weight: 400;
-  color: var(--main);
   margin: 0;
+
+  font-weight: 400;
+  line-height: var(--headline-height);
+  font-family: Neucha, serif;
+  color: var(--main);
 }
 
 h1 {
@@ -76,24 +75,20 @@ h3 {
   font-size: 34px;
 }
 
-.dark {
-  color: var(--dark);
-}
-
-.white {
-  color: var(--white);
-}
-
-.brown {
-  color: var(--brown);
+.main-color {
+  color: var(--main);
 }
 
 .text-dark {
-  color: var(--text-color);
+  color: var(--text-dark);
 }
 
-.main-color {
-  color: var(--main);
+.text-white {
+  color: var(--white);
+}
+
+.text-brown {
+  color: var(--brown);
 }
 
 .bg-light {
@@ -118,6 +113,7 @@ h3 {
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.9;
+
   content: "";
 }
 
@@ -127,9 +123,10 @@ h3 {
 }
 
 .flex-column {
-  flex: 1;
   margin-top: 0;
   margin-bottom: 0;
+
+  flex: 1;
 }
 
 /* HEADER SECTION */
@@ -153,12 +150,10 @@ h3 {
   margin-top: 40px;
 
   font-weight: 700;
-  color: var(--white);
-
   font-size: var(--font-size);
-
-  font-family: OpenSans, serif;
   line-height: var(--line-height);
+  font-family: OpenSans, serif;
+  color: var(--white);
   text-transform: uppercase;
   text-decoration: none;
 
@@ -175,15 +170,14 @@ h3 {
   z-index: 2;
 }
 
-.video-flex {
+.flex-center {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
 
-.text-margin {
-  margin-top: 30px;
+.margin-bottom-30 {
   margin-bottom: 30px;
 }
 
@@ -195,6 +189,7 @@ h3 {
   position: relative;
   margin-top: -100px;
   bottom: -100px;
+
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
 
@@ -233,6 +228,7 @@ h3 {
 
 .menu-item-card {
   padding: 24px;
+
   background: var(--light);
 }
 
@@ -246,12 +242,13 @@ h3 {
 }
 
 .text-number {
-  font-family: Neucha, serif;
-  font-size: 64px;
   margin-top: 0;
-  margin-bottom: 39px;
+  margin-bottom: 40px;
+
+  font-size: 64px;
   line-height: 1;
-  color: var(--dark);
+  font-family: Neucha, serif;
+  color: var(--text-dark);
 }
 
 .menu-item-card:hover .text-number{
@@ -282,31 +279,30 @@ h3 {
 .description-header-text {
   padding-left: 10px;
 
+  font-style: normal;
   font-weight: 700;
   font-size: 14px;
-
-  font-family: OpenSans, serif;
-  font-style: normal;
-
   line-height: 26px;
+  font-family: OpenSans, serif;
   text-transform: uppercase;
 }
 
 .secondary-text {
-  font-family: Neucha, serif;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 1.2;
   margin: 0;
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.2;
+  font-family: Neucha, serif;
 }
 
 .description-text {
   margin-top: 30px;
 
-  font-family: Neucha, serif;
-  font-size: 34px;
   font-weight: 400;
+  font-size: 34px;
   line-height: 41px;
+  font-family: Neucha, serif;
 }
 
 .translucent-light {
@@ -318,13 +314,16 @@ h3 {
 }
 
 /* FOOTER */
+
 .form {
   display: flex;
+
   background: #42413C;
 }
 
 .contact {
   margin-top: 60px;
+
   font-size: 14px;
   text-align: center;
   color: black;
@@ -344,6 +343,7 @@ h3 {
 
 .email label {
   margin-bottom: 9px;
+
   font-size: 18px;
   line-height: 160%;
 }
@@ -351,16 +351,13 @@ h3 {
 .email input {
   height: 50px;
   width: 423px;
-
   padding: 15px;
 }
 
 ::placeholder {
-  color: #757575;
-
   font-size: 13.1px;
-
   line-height: 1.6;
+  color: #757575;
 }
 
 .learn-more {
@@ -374,6 +371,7 @@ h3 {
   width: 70px;
   margin-right: 55px;
   padding: 0;
+
   background-color: var(--main);
 }
 
@@ -386,8 +384,9 @@ h3 {
 }
 
 .agreement-text {
-  font-size: 12px;
   margin: 0;
+
+  font-size: 12px;
   line-height: 1.6;
 }
 
