@@ -130,6 +130,9 @@ h3 {
 }
 
 /* HEADER SECTION */
+.header-section {
+  overflow: hidden;
+}
 
 .header-img {
   position: absolute;
